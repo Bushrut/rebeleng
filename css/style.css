@@ -1,0 +1,377 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroylight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Gilroy', Arial, sans-serif;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* заголовок */
+.wrapper_header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 250px;
+  background-color: hsl(0, 0%, 100%);
+  background: linear-gradient(#eba7a7, #fb4746);
+  color: #000000;
+}
+.header-logo {
+  display: block;
+  max-width: 284px;
+  margin: 0 auto;
+}
+
+.header-logo img {
+  width: 284px;
+  height: 94px;
+}
+
+.landing-header {
+  width: 1280px;
+  margin-bottom: 27px;
+  font-size: 48px;
+  line-height: 64px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.landing-header__small {
+  width: 580px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.main-nav {
+  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+  min-height: 45px;
+  /* background-color: #fb4746; */
+  background: linear-gradient(#fb4746, #fd7829);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  padding-top: 13px;
+}
+
+.nav-item a {
+  color: #000000;
+}
+.nav-item a:hover {
+  opacity: 0.6;
+}
+
+/* блок Что Вас ждет */
+.publicity {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.publicity_logo {
+  padding: 0;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.publicity_list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.publicity_item {
+  position: relative;
+  width: 290px;
+  min-height: 150px;
+  padding: 0;
+  padding-top: 90px;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #ffffff;
+  background: linear-gradient(0.25turn, #fd4744, #ff7c44);
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  box-shadow: #000000 1px 2px 2px;
+}
+
+.publicity_item:nth-child(2n) {
+  background: #ffffff;
+  color: #000000;
+}
+
+.publicity_item::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  left: 120px;
+  background-size: contain;
+}
+
+.publicity_item:nth-child(1)::before {
+  background: url(../icons/brainstorm.svg) center center no-repeat;
+}
+.publicity_item:nth-child(2)::before {
+  background: url(../icons/chat.svg) center center no-repeat;
+}
+.publicity_item:nth-child(3)::before {
+  background: url(../icons/calculation.svg) center center no-repeat;
+}
+.publicity_item:nth-child(4)::before {
+  background: url(../icons/biology.svg) center center no-repeat;
+}
+.publicity_item:nth-child(5)::before {
+  background: url(../icons/lecture.svg) center center no-repeat;
+}
+.publicity_item:nth-child(6)::before {
+  background: url(../icons/lecture-1.svg) center center no-repeat;
+}
+.publicity_item:nth-child(7)::before {
+  background: url(../icons/graduate.svg) center center no-repeat;
+}
+.publicity_item:nth-child(8)::before {
+  background: url(../icons/studying.svg) center center no-repeat;
+}
+
+/* промо */
+.control-item {
+  display: none;
+}
+
+.promo {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
+}
+.promo-slider-controls {
+  display: flex;
+  list-style: none;
+  /* position: absolute; */
+  padding: 0;
+  margin: 0;
+  /* right: 50%; */
+}
+
+.promo-slider-controls label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+  vertical-align: top;
+  background-color: red;
+  /* background: transparent url('../img/slider-button-empty.svg') center center
+    no-repeat;
+  background-size: cover; */
+}
+
+.photo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* видео ряд товаров */
+
+.products {
+  width: 1200px;
+  margin: 0 auto;
+}
+.prefer_list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prefer_item {
+  position: relative;
+  width: 598px;
+  height: 720px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.prefer_list img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prefer_disc {
+  display: none;
+}
+
+/* Предложения membership */
+.membership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.membership_title {
+  padding: 0;
+  margin: 5px 0;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 800;
+}
+.membership_subtitle {
+  padding: 0;
+  margin: 5px 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 800;
+}
+
+.membership_list {
+  display: flex;
+  width: 1200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.membership_item {
+  position: relative;
+  width: 300px;
+  min-height: 150px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(rgb(32, 30, 30) 14%, #fd4744);
+  box-shadow: #000000 1px 2px 2px;
+}
+
+.membership_item h3 {
+  font-size: 36px;
+}
+
+.membership_item:nth-child(1) h3 {
+  color: silver;
+}
+.membership_item:nth-child(2) h3 {
+  color: gold;
+}
+.membership_item:nth-child(3) h3 {
+  color: darkkhaki;
+}
+.membership_price {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.membership_text {
+  width: 180px;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.membership_btn {
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+  vertical-align: top;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 45px;
+  background: linear-gradient(0.25turn, #68b0fa, #868df5);
+  border-radius: 5px;  
+  box-shadow: #68b0fa 1px 1px 1px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.block_center {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
