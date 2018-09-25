@@ -248,6 +248,11 @@ img {
   flex-wrap: wrap;
 }
 
+.prefer_list img {
+  max-width: 100%;
+  height: auto;
+}
+
 .prefer_item {
   position: relative;
   width: 290px;
@@ -257,14 +262,29 @@ img {
   margin-bottom: 5px;
 }
 
-.prefer_list img {
-  max-width: 100%;
-  height: auto;
+.prefer_item:hover > .prefer_disc {
+  display: block;
 }
 
 .prefer_disc {
   display: none;
+  position: absolute;
+  width:290px;
+  height: 349px;
+  padding-left: 15px;
+  padding-right: 5px;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: #ffffff;  
+  background: hsla(48, 9%, 10%, 0.6);  
 }
+
+.prefer_disc p {
+  padding: 0;
+  margin: 0;
+}
+
 
 /* Предложения membership */
 .membership {
@@ -352,7 +372,7 @@ img {
   margin: 0;
   margin-bottom: 45px;
   background: linear-gradient(0.25turn, #68b0fa, #868df5);
-  border-radius: 5px;  
+  border-radius: 5px;
   box-shadow: #68b0fa 1px 1px 1px;
 }
 
