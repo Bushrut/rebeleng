@@ -47,7 +47,7 @@ img {
   width: 1200px;
   min-height: 250px;
   background-color: hsl(0, 0%, 100%);
-  background: linear-gradient(#eba7a7, #fb4746);
+  background: linear-gradient(#0f0f0f, #fb4746);
   color: #000000;
 }
 .header-logo {
@@ -269,15 +269,22 @@ img {
 .prefer_disc {
   display: none;
   position: absolute;
-  width:290px;
+  width: 290px;
   height: 349px;
   padding-left: 15px;
   padding-right: 5px;
   top: 0;
   left: 0;
   font-size: 14px;
-  color: #ffffff;  
-  background: hsla(48, 9%, 10%, 0.6);  
+  text-align: center;
+  color: #ffffff;
+  background: hsla(48, 9%, 10%, 0.6);
+}
+
+.prefer_item h3 {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
 }
 
 .prefer_disc p {
@@ -285,6 +292,21 @@ img {
   margin: 0;
 }
 
+.prefer_button {
+  display: block;
+  width: 155px;
+  height: 40px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;  
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: #f0c52e
+}
 
 /* Предложения membership */
 .membership {
