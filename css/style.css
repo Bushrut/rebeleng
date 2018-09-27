@@ -190,6 +190,69 @@ img {
   background: url(../icons/studying.svg) center center no-repeat;
 }
 
+/* Что дает клуб */
+
+.advantages {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+.advantages_title {
+  padding: 0;
+  margin: 35px 0 30px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.advantages_list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.advantages_item {
+  position: relative;
+  width: 290px;
+  min-height: 170px;
+  padding: 0;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  margin-bottom: 90px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  box-shadow: #000000 1px 2px 2px;
+}
+
+.advantages_item:nth-child(odd) {
+  margin-right: 300px;
+}
+
+.advantages_button {
+  position: relative;
+  display:block;
+  max-width: 270px;
+  padding: 5px 5px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 22px;
+  color:#000000;  
+  text-align: center;
+  background-color: #4eb543;
+  border-color: #4eb543;
+  border-radius: 0;
+}
+
 /* промо */
 .control-item {
   display: none;
@@ -301,11 +364,11 @@ img {
   margin-top: 15px;
   font-size: 16px;
   font-weight: 800;
-  line-height: 40px;  
+  line-height: 40px;
   text-align: center;
   letter-spacing: 1px;
   color: #ffffff;
-  background-color: #f0c52e
+  background-color: #f0c52e;
 }
 
 /* Предложения membership */
