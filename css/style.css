@@ -47,7 +47,7 @@ img {
   width: 1200px;
   min-height: 250px;
   background-color: hsl(0, 0%, 100%);
-  background: linear-gradient(#0f0f0f, #fb4746);
+  background: linear-gradient(#0f0f0f, #3F2202);
   color: #000000;
 }
 .header-logo {
@@ -63,12 +63,12 @@ img {
 
 .landing-header {
   width: 1280px;
+  margin: 0 auto;
   margin-bottom: 27px;
   font-size: 48px;
   line-height: 64px;
-  margin: 0 auto;
+  color: #ffffff;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .landing-header__small {
@@ -87,7 +87,7 @@ img {
   margin: 0 auto;
   min-height: 45px;
   /* background-color: #fb4746; */
-  background: linear-gradient(#fb4746, #fd7829);
+  background: linear-gradient(#3F2202, #fd7829);
 }
 
 .nav {
@@ -101,10 +101,11 @@ img {
 
 .nav-item {
   padding-top: 13px;
+  
 }
 
 .nav-item a {
-  color: #000000;
+  color: #F8F8F8;
 }
 .nav-item a:hover {
   opacity: 0.6;
@@ -196,11 +197,9 @@ img {
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 45px;
-  background: url(../image/cut/me.jpg) center center no-repeat;
+  background: url(../image/cut/me.jpg) top 15px center no-repeat;
   background-size: contain;
-  background-color: #F8F8F8;
-   
-  
+  background-color: #f8f8f8;
 }
 
 .advantages_title {
@@ -374,6 +373,48 @@ img {
   letter-spacing: 1px;
   color: #ffffff;
   background-color: #f0c52e;
+}
+
+.club-stats {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+
+.club-stats_title {
+  padding: 0;
+  margin: 5px 0;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.club-stats_list {
+  display: flex;
+  width: 1200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.club-stats_item {
+  position: relative;
+  width: 150px;
+  min-height: 200px;
+  text-align: center;
+}
+
+.club-stats_diagram {
+  display: block;
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  line-height: 34px;
+  color: rgb(95, 53, 4);
+  border: 20px solid #3F2202;
+  border-radius: 50%;
 }
 
 /* Предложения membership */
