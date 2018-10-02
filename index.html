@@ -13,58 +13,30 @@
     <header class="header">
         <div class="wrapper_header">
             <a href="http://rebeleng.ru" class="header-logo" target="blank">
-                <img src="image/logo-big.png" alt="Бунтарский Английский" width="1211" height="427"></a>
+                <img src="image/cut/logo-white.png" alt="Бунтарский Английский" width="1211" height="427"></a>
             <h1 class="landing-header">БУНТАРСКИЙ КЛУБ С МАЙКЛОМ</h1>
-            <h2 class="landing-header__small">Результат, за который не стыдно</h2>
+            <h2 class="landing-header__small">путишествие в сердце разговорного английского</h2>
         </div>
         <nav class="main-nav">
             <ul class='nav'>
-                <li class="nav-item"><a href="">Что вас ждет</a></li>
-                <li class="nav-item"><a href="">Что представляет из себя клуб</a></li>
-                <li class="nav-item"><a href="">Посмотреть примеры разборов</a></li>
-                <li class="nav-item"><a href="">Клуб в цифрах</a></li>
-                <li class="nav-item"><a href="">Контакты</a></li>
+                <li class="nav-item"><a href="">мой блог</a></li>
+                <li class="nav-item"><a href="">каталог продуктов</a></li>
+                <li class="nav-item"><a href="">я в соцесетях</a></li>
+                <li class="nav-item"><a href="">подписаться на рассылку и ничего не пропустить</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- <div class="wrapper">
-            <section>
-                <iframe width="1200" height="675" src="https://www.youtube-nocookie.com/embed/3VxmoekpSOc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         <section class="promo">
+            <section class="promo_video">
+                <iframe width="600" height="338" src="https://www.youtube-nocookie.com/embed/U0L6gsFnBSM?rel=0&amp;controls=0&amp;showinfo=0;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </section>
-            <!-- <section class="promo">
-                <h2 class="visually-hidden">Фотогалерея клуба</h2>
-                <div class="slider-controls">
-                    <div class="">
-                        <input class="control-item" id="slider-1" name="toggle" checked type="radio">
-                        <input class="control-item" id="slider-2" name="toggle" type="radio">
-                        <input class="control-item" id="slider-3" name="toggle" type="radio">
-                    </div>
-                    <ul class="promo-slider-controls">
-                        <li>
-                            <label for="slider-1">
-                                <span class="visually-hidden">Фото 1</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="slider-2">
-                                <span class="visually-hidden">Фото 1</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="slider-3">
-                                <span class="visually-hidden">Фото 1</span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="photo">
-                    <li><img src="image/time_to_speak_small.jpg" alt="Time to speak" width="540" height="360"></li>
-                </ul>
-            </section> -->
-        </div> -->
+             <section class="promo_pucture">
+                <img  src="image/cut/me.jpg" alt="Рисунок Майкла в карандаше" width="338" height="338">
+            </section> 
+        </section>
 
-        <section class="publicity">
+        <!-- <section class="publicity">
             <h2 class="publicity_logo">Что вас ждет</h2>
             <ul class="publicity_list">
                 <li class="publicity_item">
@@ -92,7 +64,7 @@
                     Качественная продукцию за которую не стыдно
                 </li>
             </ul>
-        </section>
+        </section> -->
         <section class="advantages">
             <h2 class="advantages_title">Что представляет из себя клуб</h2>
             <ul class="advantages_list">
@@ -118,7 +90,7 @@
             </ul>
             <a class="advantages_button" href="https://rebeleng.ru/wpm/besplatnyj-probnyj-abonement/welcome/" target="blank">Попробовать бесплатный период</a>
         </section>
-        <section class="club-stats">
+        <!-- <section class="club-stats">
             <h2 class="club-stats_title">Клуб в цифрах</h2>
             <ul class="club-stats_list">
                 <li class="club-stats_item">
@@ -138,7 +110,7 @@
                     <div class="club-stats_diagram">148 уроков</div>
                 </li>
             </ul>
-        </section>
+        </section> -->
         <section class='products'>
             <h2 class="publicity_logo">Примеры продуктов</h2>
             <ul class='prefer_list'>
@@ -303,9 +275,19 @@
         </section>
     </main>
     <footer class="footer">
-        <h2>ИП ЦЕРЕТЬЯН МИХАИЛ ЭДУАРДОВИЧ</h2>
+        <p class="footer_title">ИП ЦЕРЕТЬЯН МИХАИЛ ЭДУАРДОВИЧ</p>
         <p>ИНН 234304847785</p>
     </footer>
+
+    <section class="modal_video">
+        <button class="modal-button-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <!-- <iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/0TOK2hUiDQ4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        <div id="player"></div>
+      </section>
+
+      <script src="js/modal.js"></script>
 </body>
 
 </html>
