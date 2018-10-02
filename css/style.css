@@ -234,8 +234,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;  
 }
 
 .advantages_item {
@@ -256,9 +255,9 @@ img {
   box-shadow: #000000 1px 2px 2px;
 }
 
-.advantages_item:nth-child(odd) {
+/* .advantages_item:nth-child(odd) {
   margin-right: 300px;
-}
+} */
 
 .advantages_button {
   position: relative;
