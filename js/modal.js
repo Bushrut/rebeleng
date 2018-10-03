@@ -5,6 +5,7 @@ let modalButtonClose = document.querySelector('.modal-button-close');
 preferButton.forEach(btn => {
   btn.addEventListener('click', function(evt) {
     evt.preventDefault();
+    player.loadVideoById('CKATLwbcl0M');
     playVideo();
     modal.classList.add('modal-show');
   });
@@ -28,11 +29,9 @@ let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '540',
-    width: '960',
-    videoId: '0TOK2hUiDQ4',
-    events: {    
-    }
-  });
+    width: '960',    
+    events: {}
+  });  
 }
 
 function playVideo() {
@@ -41,4 +40,3 @@ function playVideo() {
 function stopVideo() {
   player.stopVideo();
 }
-

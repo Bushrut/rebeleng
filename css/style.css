@@ -214,9 +214,7 @@ img {
 .advantages {
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 45px;
-  /* background: url(../image/cut/me.jpg) top 15px center no-repeat;
-  background-size: contain; */
+  margin-bottom: 5px; 
   background-color: #f8f8f8;
 }
 
@@ -245,8 +243,9 @@ img {
   padding-top: 15px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
   margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
   color: #000000;
   background-color: #ffffff;
   text-align: center;
@@ -454,6 +453,11 @@ img {
 
 .membership_item h3 {
   font-size: 36px;
+  line-height: 36px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 .membership_item:nth-child(1) h3 {
@@ -471,7 +475,7 @@ img {
 }
 
 .membership_text {
-  width: 180px;
+  width: 190px;
   font-size: 14px;
   line-height: 25px;
   margin: 0 auto;
@@ -481,8 +485,8 @@ img {
 .membership_btn {
   display: inline-block;
   width: 220px;
-  height: 40px;
-  color: #ffffff;
+  min-height: 40px;
+  color: #110f0f;
   font-size: 16px;
   line-height: 40px;
   text-transform: uppercase;
@@ -491,9 +495,10 @@ img {
   padding: 0;
   margin: 0;
   margin-bottom: 45px;
-  background: linear-gradient(0.25turn, #68b0fa, #868df5);
+  border: 1px solid #ffffff;
   border-radius: 5px;
-  box-shadow: #68b0fa 1px 1px 1px;
+  background-color: #f0c52e
+  
 }
 
 .about_us {
