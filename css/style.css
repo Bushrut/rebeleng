@@ -214,8 +214,8 @@ img {
 .advantages {
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 5px; 
-  background-color: #f8f8f8;
+  margin-bottom: 5px;
+  /* background-color: #f8f8f8; */
 }
 
 .advantages_title {
@@ -232,7 +232,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: space-between;  
+  justify-content: space-around;
 }
 
 .advantages_item {
@@ -497,8 +497,13 @@ img {
   margin-bottom: 45px;
   border: 1px solid #ffffff;
   border-radius: 5px;
-  background-color: #f0c52e
-  
+  background-color: #f0c52e;
+  opacity: 0.8;
+}
+
+.membership_btn:hover,
+.membership_btn:focus {
+  opacity: 1;
 }
 
 .about_us {
@@ -524,6 +529,25 @@ img {
   margin: 0;
   font-size: 18px;
   line-height: 20px;
+}
+
+.social-links_list {
+  display: flex;
+  width: 170px;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.social-links__link {
+  fill: #a8b4a7;
+  opacity: 0.6;
+}
+
+.social-links__link:hover {
+ opacity: 1;
 }
 
 .wrapper {

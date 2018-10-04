@@ -1,7 +1,7 @@
 let preferButton = document.querySelectorAll('.prefer_button');
 let modal = document.querySelector('.modal_video');
 let modalButtonClose = document.querySelector('.modal-button-close');
-
+let social = document.querySelector('.social');
 preferButton.forEach(btn => {
   btn.addEventListener('click', function(evt) {
     evt.preventDefault();
@@ -40,3 +40,8 @@ function playVideo() {
 function stopVideo() {
   player.stopVideo();
 }
+
+social.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  window.scrollTo(0, document.body.scrollHeight)
+})
