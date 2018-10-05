@@ -236,7 +236,9 @@ img {
 }
 
 .advantages_item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 290px;
   min-height: 170px;
   padding: 0;
@@ -254,23 +256,16 @@ img {
   box-shadow: #000000 1px 2px 2px;
 }
 
-/* .advantages_item:nth-child(odd) {
-  margin-right: 300px;
-} */
-
 .advantages_button {
-  position: relative;
-  display: block;
-  max-width: 270px;
-  padding: 5px 5px;
+  display: block;  
+  width: 170px;
   margin: 0 auto;
-  font-weight: 500;
-  font-size: 22px;
-  color: #000000;
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
   text-align: center;
-  background-color: #4eb543;
-  border-color: #4eb543;
-  border-radius: 0;
+  background-color: #cc181e;
 }
 
 /* промо */
@@ -547,7 +542,7 @@ img {
 }
 
 .social-links__link:hover {
- opacity: 1;
+  opacity: 1;
 }
 
 .wrapper {
