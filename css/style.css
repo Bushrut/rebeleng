@@ -567,7 +567,7 @@ img {
   padding: 0;
   margin: 0;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
+  background-color: #8d7171;
   z-index: 4;
 }
 
@@ -587,12 +587,12 @@ img {
   cursor: pointer;
   background: url('../icons/modal-close.svg') 50% 50% no-repeat;
 
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .modal-button-close:hover,
 .modal-button-close:focus {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .visually-hidden {
