@@ -2,12 +2,12 @@ let preferButton = document.querySelectorAll('.prefer_button');
 let modal = document.querySelector('.modal_video');
 let modalButtonClose = document.querySelector('.modal-button-close');
 let social = document.querySelector('.social');
-let way = document.querySelector(".way");
-let wish = document.querySelector(".wish");
-let idioms = document.querySelector(".idioms");
-let verb_do = document.querySelector(".do");
-let workshop1 = document.querySelector(".workshop1");
-let workshop2 = document.querySelector(".workshop2");
+let way = document.querySelector('.way');
+let wish = document.querySelector('.wish');
+let idioms = document.querySelector('.idioms');
+let verb_do = document.querySelector('.do');
+let workshop1 = document.querySelector('.workshop1');
+let workshop2 = document.querySelector('.workshop2');
 
 preferButton.forEach(btn => {
   btn.addEventListener('click', function(evt) {
@@ -21,44 +21,37 @@ preferButton.forEach(btn => {
 way.addEventListener('click', function(evt) {
   evt.preventDefault();
   player.loadVideoById('3gj5mbADfKo');
-  playVideo();  
+  playVideo();
   modal.classList.add('modal-show');
 });
 
 wish.addEventListener('click', function(evt) {
   evt.preventDefault();
   player.loadVideoById('UMto_MfNk_c');
-  playVideo();  
+  playVideo();
   modal.classList.add('modal-show');
 });
 
 idioms.addEventListener('click', function(evt) {
   evt.preventDefault();
   player.loadVideoById('dMeiDL0c72c');
-  playVideo();  
+  playVideo();
   modal.classList.add('modal-show');
 });
 
 verb_do.addEventListener('click', function(evt) {
   evt.preventDefault();
   player.loadVideoById('2yxyXsx4nbY');
-  playVideo();  
+  playVideo();
   modal.classList.add('modal-show');
-})
+});
 
 workshop1.addEventListener('click', function(evt) {
   evt.preventDefault();
   player.loadVideoById('4AoDXV2vrYc');
-  playVideo();  
+  playVideo();
   modal.classList.add('modal-show');
-})
-
-workshop2.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  player.loadVideoById('UcaCbhm8xoI');
-  playVideo();  
-  modal.classList.add('modal-show');
-})
+});
 
 modalButtonClose.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -78,9 +71,9 @@ let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '540',
-    width: '960',    
+    width: '960',
     events: {}
-  });  
+  });
 }
 
 function playVideo() {
@@ -92,5 +85,5 @@ function stopVideo() {
 
 social.addEventListener('click', function(evt) {
   evt.preventDefault();
-  window.scrollTo(0, document.body.scrollHeight)
-})
+  window.scrollTo(0, document.body.scrollHeight);
+});
