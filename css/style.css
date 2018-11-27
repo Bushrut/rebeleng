@@ -120,13 +120,7 @@ img {
 
 .nav-item {
   padding-top: 13px;
-}
-
-.nav-item a {
   color: #f8f8f8;
-}
-.nav-item a:hover {
-  opacity: 0.6;
 }
 
 /* блок Что Вас ждет */
@@ -258,14 +252,21 @@ img {
 
 .advantages_button {
   display: block;  
-  width: 170px;
+  width: 350px;
   margin: 0 auto;
   margin-top: 5px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 38px;
   color: white;
   text-align: center;
+  text-transform: uppercase;
   background-color: #cc181e;
+  border: 1px solid gray;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+.advantages_button:hover {
+  opacity: 1;  
 }
 
 /* промо */
